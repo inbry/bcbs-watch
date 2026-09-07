@@ -1,0 +1,77 @@
+[site]
+timezone = "Asia/Tokyo"
+
+[model]
+name = "claude-sonnet-5"
+max_enrich_per_run = 15
+
+# ---- チャンネル定義 ----
+[[channel]]
+id = "regulatory"
+label = "Regulatory Watch"
+output = "index.html"
+feed = "feed.xml"
+hero = "deadline"                  # "deadline" | "none"
+enrich_enabled = false             # 翻訳・要約・スコア付けを行うか。v1はAPIを一切呼ばない方針のため無効
+max_items = 120                    # state に保持する件数（FR-3.4）
+display_limit = 20                 # ページに表示する件数（FR-4.8）
+display_new_hours = 72             # NEW を出す時間（FR-4.10）
+display_always_score = 80          # この点以上は件数上限を無視（FR-4.9b）
+feed_limit = 50                    # RSSフィードの件数。display_limit とは別設定（FR-4.12）
+doc_types = ["consultation", "standard", "report", "statement", "other"]
+profile = """
+バーゼル枠組みの実装に関する規制動向のトリアージ。特に以下に強い関心がある：
+- SA-CCR、FRTB（市場リスク）、LCR/NSFR などの流動性規制
+- 自己資本比率規制、資本の質・バッファー
+- 開示（Pillar 3）、規制報告の実務
+- 証券会社・投資銀行業務への影響が大きいもの
+優先度が低いもの：
+- 人事・組織の発表、会議日程のみの告知
+- 新興国のリテール金融包摂、決済インフラ一般
+"""
+
+[channel.doc_type_labels]
+consultation = "市中協議"
+standard = "基準"
+report = "報告書"
+statement = "声明"
+other = "その他"
+
+[channel.glossary]
+"consultative document" = "市中協議文書"
+"discussion paper" = "ディスカッションペーパー"
+"standard" = "基準"
+"Basel Committee" = "バーゼル委員会"
+"range of practices" = "実務の幅に関する報告"
+
+# ---- 情報源 ----
+[[source]]
+id = "bcbs-press"
+channel = "regulatory"
+label = "BCBS"
+kind = "rss"
+language = "en"
+url = "https://www.bis.org/doclist/all_pressrels.rss"
+include = ["basel committee", "/bcbs/", "basel iii", "basel framework"]
+enabled = true
+
+# 以下は雛形。v1 では無効のまま置く。
+[[source]]
+id = "fsa"
+channel = "regulatory"
+label = "金融庁"
+kind = "rss"
+language = "ja"                    # 翻訳しない
+url = "https://www.fsa.go.jp/fsaNewsListAll_rss2.xml"
+include = ["バーゼル", "自己資本", "流動性", "開示"]
+enabled = false
+
+[[source]]
+id = "boj"
+channel = "regulatory"
+label = "日本銀行"
+kind = "rss"
+language = "ja"
+url = ""                           # https://www.boj.or.jp/rss.htm で確認して記入
+include = ["考査", "金融システム", "決済"]
+enabled = false

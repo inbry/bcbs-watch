@@ -1,0 +1,11 @@
+# 生成物。GitHub Pages へは Actions がその都度アップロードするだけで、
+# リポジトリには残さない（成果物であって、ソースではない）。
+/public/
+
+# Python
+__pycache__/
+*.pyc
+
+# 作業文書。リポジトリの外（claude-work 直下）で管理する。
+# 動作には関係なく、公開範囲を気にする対象を増やしたくないため念のため除外。
+bcbs-watch-requirements.md

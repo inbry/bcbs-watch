@@ -1,0 +1,64 @@
+name: Build and deploy
+
+# 毎日 06:00 JST に実行する（D-6）。cron は UTC 基準なので 21:00 UTC（前日）。
+# workflow_dispatch は手動実行用（受け入れ基準19）。
+on:
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch: {}
+
+# state/items.json への push が競合しないよう、実行を直列化する。
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          # 標準ライブラリのみを使用するため、pip install のステップは置かない（D-5, NFR-1）。
+
+      - name: Collect and render
+        # v1 は翻訳・要約・スコア付け（enrich）を行わない方針のため、
+        # ANTHROPIC_API_KEY は参照しない。Secrets の登録なしで動く（enrich_enabled=false）。
+        run: python -m watch.main
+
+      - name: Commit state changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/items.json
+          if git diff --cached --quiet; then
+            echo "state/items.json に変更なし。コミットをスキップする。"
+          else
+            git commit -m "Update state"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
