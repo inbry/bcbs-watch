@@ -37,6 +37,25 @@
       "tags": [],
       "title": "Basel Committee publishes report on information and communication technology risk management",
       "title_ja": ""
+    },
+    "a89cced46ace6ba6": {
+      "channel": "regulatory",
+      "deadline": "",
+      "doc_type": "",
+      "enriched": false,
+      "first_seen": "2026-09-23T23:27:13.462340+00:00",
+      "key": "a89cced46ace6ba6",
+      "language": "en",
+      "link": "https://www.bis.org/media-releases/20260923-basel-iii-risk-based-capital-and-leverage-ratios-are-stable-while-liquidity-indicators-show",
+      "published": "2026-09-23T00:00:00+00:00",
+      "score": null,
+      "source_id": "bcbs-press",
+      "source_label": "BCBS",
+      "summary": "As of the end of 2025, Basel III risk-based capital and leverage ratios remained stable for large internationally active banks compared with June 2025. The average Liquidity Coverage Ratio (LCR) of Group 1 banks improved slightly, while the Net Stable Funding Ratio (NSFR) decreased slightly. The average impact of the Basel III framework on Tier 1 minimum required capital (MRC) for Group 1 banks is +2.2%.",
+      "summary_ja": "",
+      "tags": [],
+      "title": "Basel III risk-based capital and leverage ratios are stable while liquidity  indicators show limited movements for large internationally active  banks, latest Basel III monitoring exercise shows",
+      "title_ja": ""
     }
   }
 }
