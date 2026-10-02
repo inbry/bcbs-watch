@@ -56,6 +56,25 @@
       "tags": [],
       "title": "Basel III risk-based capital and leverage ratios are stable while liquidity  indicators show limited movements for large internationally active  banks, latest Basel III monitoring exercise shows",
       "title_ja": ""
+    },
+    "b4323ecb88e561dd": {
+      "channel": "regulatory",
+      "deadline": "",
+      "doc_type": "",
+      "enriched": false,
+      "first_seen": "2026-10-02T00:34:46.817745+00:00",
+      "key": "b4323ecb88e561dd",
+      "language": "en",
+      "link": "https://www.bis.org/media-releases/20261001-basel-committee-meets-advance-supervisory-and-regulatory-initiatives-and-discuss-risks-and",
+      "published": "2026-10-01T00:00:00+00:00",
+      "score": null,
+      "source_id": "bcbs-press",
+      "source_label": "BCBS",
+      "summary": "Exchanges experiences and views on developments in artificial intelligence for the global banking system and supervisors, modernisation efforts and implications for the Committee’s future work programme...",
+      "summary_ja": "",
+      "tags": [],
+      "title": "Basel Committee meets to advance supervisory and regulatory initiatives and discuss risks and vulnerabilities to the global banking system",
+      "title_ja": ""
     }
   }
 }
