@@ -57,6 +57,25 @@
       "title": "Basel III risk-based capital and leverage ratios are stable while liquidity  indicators show limited movements for large internationally active  banks, latest Basel III monitoring exercise shows",
       "title_ja": ""
     },
+    "aba687069a0445a3": {
+      "channel": "regulatory",
+      "deadline": "",
+      "doc_type": "",
+      "enriched": false,
+      "first_seen": "2026-10-06T01:41:04.157984+00:00",
+      "key": "aba687069a0445a3",
+      "language": "en",
+      "link": "https://www.bis.org/media-releases/20261005-basel-iii-applicable-almost-all-member-jurisdictions-2027",
+      "published": "2026-10-05T00:00:00+00:00",
+      "score": null,
+      "source_id": "bcbs-press",
+      "source_label": "BCBS",
+      "summary": "Three quarters of the Basel Committee’s 27 member jurisdictions have now published regulations implementing the full set of Basel III standards. Almost all member jurisdictions have publicly announced that banks must apply Basel III by April 2027 or earlier. The Committee will continue to closely monitor and assess the full and consistent implementation of Basel III standards.",
+      "summary_ja": "",
+      "tags": [],
+      "title": "Basel III applicable in almost all member jurisdictions by 2027",
+      "title_ja": ""
+    },
     "b4323ecb88e561dd": {
       "channel": "regulatory",
       "deadline": "",
