@@ -94,6 +94,25 @@
       "tags": [],
       "title": "Basel Committee meets to advance supervisory and regulatory initiatives and discuss risks and vulnerabilities to the global banking system",
       "title_ja": ""
+    },
+    "e9e729b4534eb63a": {
+      "channel": "regulatory",
+      "deadline": "",
+      "doc_type": "",
+      "enriched": false,
+      "first_seen": "2026-10-14T00:10:50.070760+00:00",
+      "key": "e9e729b4534eb63a",
+      "language": "en",
+      "link": "https://www.bis.org/media-releases/20261013-basel-committee-finds-australia-japan-korea-switzerland-compliant-and-canada-united-kingdom",
+      "published": "2026-10-13T00:00:00+00:00",
+      "score": null,
+      "source_id": "bcbs-press",
+      "source_label": "BCBS",
+      "summary": "The Basel Committee has published assessment reports on the implementation of its leverage ratio framework (LEV) in Australia, Canada, Japan, Korea, Switzerland and the United Kingdom. Australia, Japan, Korea and Switzerland are assessed as compliant; Canada and the United Kingdom are assessed as largely compliant. This publication concludes the first round of multi-jurisdictional assessments of the leverage ratio.",
+      "summary_ja": "",
+      "tags": [],
+      "title": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant,  and Canada, United Kingdom largely compliant with its leverage ratio  framework",
+      "title_ja": ""
     }
   }
 }
