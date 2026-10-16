@@ -19,6 +19,25 @@
       "title": "Basel Committee agrees to publish report on information and communication technology risk management, progresses cryptoasset targeted review, considers targeted updates on liquidity risk principles",
       "title_ja": ""
     },
+    "6e034382f9ff21cf": {
+      "channel": "regulatory",
+      "deadline": "",
+      "doc_type": "",
+      "enriched": false,
+      "first_seen": "2026-10-16T23:17:53.898466+00:00",
+      "key": "6e034382f9ff21cf",
+      "language": "en",
+      "link": "https://www.bis.org/media-releases/20261016-basel-committee-finalises-measures-address-window-dressing-g-sib-framework-and-consults-g-sib",
+      "published": "2026-10-16T00:00:00+00:00",
+      "score": null,
+      "source_id": "bcbs-press",
+      "source_label": "BCBS",
+      "summary": "The Basel Committee on Banking Supervision today published final amendments to address window dressing in the G-SIB framework and a consultation on the G-SIB methodology review.",
+      "summary_ja": "",
+      "tags": [],
+      "title": "Basel Committee finalises measures to address window-dressing in the G-SIB framework and consults on G-SIB methodology review",
+      "title_ja": ""
+    },
     "a7ab1cfa84fd41a8": {
       "channel": "regulatory",
       "deadline": "",
