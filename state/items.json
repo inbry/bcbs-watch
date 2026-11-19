@@ -1,5 +1,24 @@
 {
   "items": {
+    "088aad5e29f59c7a": {
+      "channel": "regulatory",
+      "deadline": "",
+      "doc_type": "",
+      "enriched": false,
+      "first_seen": "2026-11-19T02:20:46.827304+00:00",
+      "key": "088aad5e29f59c7a",
+      "language": "en",
+      "link": "https://www.bis.org/media-releases/20261118-basel-committee-discusses-risks-and-vulnerabilities-faced-global-banking-system",
+      "published": "2026-11-18T00:00:00+00:00",
+      "score": null,
+      "source_id": "bcbs-press",
+      "source_label": "BCBS",
+      "summary": "The Basel Committee on Banking Supervision met in Basel on 18 November 2026 to discuss a range of analytical, supervisory and regulatory initiatives.",
+      "summary_ja": "",
+      "tags": [],
+      "title": "Basel Committee discusses risks and vulnerabilities faced by global banking system",
+      "title_ja": ""
+    },
     "493c2c838ce98c1f": {
       "channel": "regulatory",
       "deadline": "",
